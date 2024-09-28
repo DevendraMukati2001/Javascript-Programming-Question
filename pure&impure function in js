@@ -1,0 +1,22 @@
+//pure function
+/*function doublevalue(num){
+    return num*2;
+}
+
+console.log(doublevalue(5));*/
+
+//impure function
+const multipleir=4;
+function doublevalue(num){
+    return num*multipleir;
+}
+console.log(doublevalue(5));
+
+//avoiding mutation
+function appendNum(arr){
+    arr.push(5,6);
+    return arr;
+}
+const numbers=[1,2,3,4];
+const result=appendNum(numbers);
+console.log(result);
